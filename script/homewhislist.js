@@ -1,16 +1,39 @@
 import { homeNav, footer, productJson } from "./utils.js";
 
+// notification wishlistandcart
+function updateWishlistcartNotification() {
+    const guestData = JSON.parse(localStorage.getItem("guest")) || { wishlist: [], cart: [], checkproduct: [] };
+    const wishlistItems = guestData.wishlist || [];
+
+    document.querySelectorAll(".notification").forEach(notification => {
+
+        notification.textContent = wishlistItems.length;
+        notification.style.display = wishlistItems.length > 0 ? "block" : "none";
+    })
+
+
+
+    // Cart notification setup
+    const cartItems = guestData.cart || [];
+
+    document.querySelectorAll(".cart-notification").forEach(cartNotification => {
+        if (cartItems.length > 0) {
+            cartNotification.textContent = cartItems.length;
+            cartNotification.style.display = "block";
+        } else {
+            cartNotification.style.display = "none";
+        }
+    })
+
+
+}
+
+
 homeNav().then(data => {
     document.getElementById("nav").innerHTML = data;
 
-    const guestData = JSON.parse(localStorage.getItem("guest")) || { wishlist: [], cart: [], checkproduct: [] };
-    const wishlistItems = guestData.wishlist || [];
-    const notification = document.querySelector(".notification");
+    updateWishlistcartNotification()
 
-    notification.textContent = wishlistItems.length;
-    notification.style.display = wishlistItems.length > 0 ? "block" : "none";
-
-    updateCartNotification();
 });
 
 footer().then(data => {
@@ -49,10 +72,12 @@ productJson().then(data => {
 
 function updateCartNotification() {
     const guestData = JSON.parse(localStorage.getItem("guest")) || { cart: [] };
-    const cartNotification = document.querySelector(".cart-notification");
-    const updatedCart = guestData.cart;
-    cartNotification.textContent = updatedCart.length;
-    cartNotification.style.display = updatedCart.length > 0 ? "block" : "none";
+    document.querySelectorAll(".cart-notification").forEach(cartNotification => {
+        const updatedCart = guestData.cart;
+        cartNotification.textContent = updatedCart.length;
+        cartNotification.style.display = updatedCart.length > 0 ? "block" : "none";
+    });
+
 }
 
 
@@ -152,7 +177,7 @@ wishlistItems.forEach(wishlist => {
                 <p class="text-white rounded-1 ps-2"></p>
                 <img style="width: 130px; height: 130px;" class="mt-4" src="${wishlist.image}" alt="">
                 <div class="d-flex flex-column">
-                    <a href=""><img src="/images/icon-delete.png" alt="wishlist"></a>
+                    <img class="delete" src="/images/icon-delete.png" alt="wishlist">
                 </div>
             </div>
             <button class="cart w-100 mt-auto btn btn-dark">Add To Cart</button>
@@ -161,6 +186,21 @@ wishlistItems.forEach(wishlist => {
         <span style="color: #DB4444;">$${wishlist.price}</span>
     `;
     userwishlist.appendChild(row);
+
+
+    //delete
+    const wishlistDelete = row.querySelector(".delete");
+    const iswishlist = guestData.wishlist.some(item => item.title === wishlist.title);
+
+    wishlistDelete.addEventListener("click", () => {
+        if (iswishlist) {
+            guestData.wishlist = guestData.wishlist.filter(product => product.title !== wishlist.title);
+            localStorage.setItem("guest", JSON.stringify(guestData));
+            row.remove();
+            updateWishlistcartNotification()
+
+        }
+    });
 
     const wishlistCartBtn = row.querySelector(".cart");
 

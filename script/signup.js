@@ -2,6 +2,29 @@ import { signupLoginNav, footer, showAlert } from "./utils.js";
 
 signupLoginNav().then(data => {
     document.getElementById("nav").innerHTML = data;
+
+    // Wishlist notification setup
+    const guestData = JSON.parse(localStorage.getItem("guest")) || [];
+    const wishlistItems = guestData.wishlist || [];
+    document.querySelectorAll(".notification").forEach(notification => {
+        if (wishlistItems.length > 0) {
+            notification.textContent = wishlistItems.length;
+            notification.style.display = "block";
+        } else {
+            notification.style.display = "none";
+        }
+    });
+
+    // Cart notification setup
+    const cartItems = guestData.cart || [];
+    document.querySelectorAll(".cart-notification").forEach(notification => {
+        if (cartItems.length > 0) {
+            notification.textContent = cartItems.length;
+            notification.style.display = "block";
+        } else {
+            notification.style.display = "none";
+        }
+    });
 })
 
 footer().then(data => {
@@ -109,7 +132,7 @@ createAccount.addEventListener('click', (e) => {
 
     // Create user data object
     const userData = {
-        id:currentUserId,
+        id: currentUserId,
         userName: nameValue,
         email: emailAndNum,
         password: passwordValue,
@@ -119,7 +142,7 @@ createAccount.addEventListener('click', (e) => {
     };
 
 
-    
+
 
     // Transfer guest data if available and not empty
     if (guestData && (guestData.cart.length > 0 || guestData.wishlist.length > 0 || guestData.checkproduct.length > 0)) {

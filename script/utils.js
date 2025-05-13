@@ -70,6 +70,6 @@ export const signout = () => {
     document.querySelector(".signout").addEventListener("click", () => {
         localStorage.removeItem("currentuserid");
 
-        window.location.href = "/user.html";
+        window.location.href = "/index.html";
     });
 };

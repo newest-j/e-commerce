@@ -13,25 +13,30 @@ userNav().then(data => {
 
 
     const wishlistItems = user.wishlist;
-    const notification = document.querySelector(".notification");
+    document.querySelectorAll(".notification").forEach(notification => {
+        if (wishlistItems.length > 0) {
+            notification.textContent = wishlistItems.length;
+            notification.style.display = "block";
+        } else {
+            notification.style.display = "none";
+        }
+    })
 
-    if (wishlistItems.length > 0) {
-        notification.textContent = wishlistItems.length;
-        notification.style.display = "block";
-    } else {
-        notification.style.display = "none";
-    }
+
 
     // Cart notification setup
-    const cartNotification = document.querySelector(".cart-notification");
     const cartItems = user.cart || [];
 
-    if (cartItems.length > 0) {
-        cartNotification.textContent = cartItems.length;
-        cartNotification.style.display = "block";
-    } else {
-        cartNotification.style.display = "none";
-    }
+    document.querySelectorAll(".cart-notification").forEach(cartNotification => {
+        if (cartItems.length > 0) {
+            cartNotification.textContent = cartItems.length;
+            cartNotification.style.display = "block";
+        } else {
+            cartNotification.style.display = "none";
+        }
+    })
+
+
 })
 
 

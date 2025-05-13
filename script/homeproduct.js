@@ -5,26 +5,26 @@ homeNav().then(data => {
 
     // Wishlist notification setup
     const guestData = JSON.parse(localStorage.getItem("guest")) || [];
-    const wishlistItems = guestData.wishlist;
-    const notification = document.querySelector(".notification");
-
-    if (wishlistItems.length > 0) {
-        notification.textContent = wishlistItems.length;
-        notification.style.display = "block";
-    } else {
-        notification.style.display = "none";
-    }
+    const wishlistItems = guestData.wishlist || [];
+    document.querySelectorAll(".notification").forEach(notification => {
+        if (wishlistItems.length > 0) {
+            notification.textContent = wishlistItems.length;
+            notification.style.display = "block";
+        } else {
+            notification.style.display = "none";
+        }
+    });
 
     // Cart notification setup
-    const cartNotification = document.querySelector(".cart-notification");
     const cartItems = guestData.cart || [];
-
-    if (cartItems.length > 0) {
-        cartNotification.textContent = cartItems.length;
-        cartNotification.style.display = "block";
-    } else {
-        cartNotification.style.display = "none";
-    }
+    document.querySelectorAll(".cart-notification").forEach(notification => {
+        if (cartItems.length > 0) {
+            notification.textContent = cartItems.length;
+            notification.style.display = "block";
+        } else {
+            notification.style.display = "none";
+        }
+    });
 })
 
 footer().then(data => {

@@ -1,33 +1,45 @@
 import { userNav, footer, productJson, signout } from "./utils.js";
-// Load navigation
-userNav().then(data => {
-    document.getElementById("nav").innerHTML = data;
-    signout();
-    // Wishlist notification 
+
+// notification wishlistandcart
+function updateWishlistcartNotification() {
+    // Wishlist notification setup
     const users = JSON.parse(localStorage.getItem("users"));
     const currentUserId = JSON.parse(localStorage.getItem("currentuserid"));
     const user = users.find(currentuser => currentuser.id === currentUserId);
 
     const wishlistItems = user.wishlist;
-    const notification = document.querySelector(".notification");
 
-    if (wishlistItems.length > 0) {
-        notification.textContent = wishlistItems.length;
-        notification.style.display = "block";
-    } else {
-        notification.style.display = "none";
-    }
+    document.querySelectorAll(".notification").forEach(notification => {
+        if (wishlistItems.length > 0) {
+            notification.textContent = wishlistItems.length;
+            notification.style.display = "block";
+        } else {
+            notification.style.display = "none";
+        }
+    })
 
-    // Cart notification
-    const cartNotification = document.querySelector(".cart-notification");
-    const cartItems = user.cart;
 
-    if (cartItems.length > 0) {
-        cartNotification.textContent = cartItems.length;
-        cartNotification.style.display = "block";
-    } else {
-        cartNotification.style.display = "none";
-    }
+    // Cart notification setup
+    const cartItems = user.cart || [];
+
+    document.querySelectorAll(".cart-notification").forEach(cartNotification => {
+        if (cartItems.length > 0) {
+            cartNotification.textContent = cartItems.length;
+            cartNotification.style.display = "block";
+        } else {
+            cartNotification.style.display = "none";
+        }
+    })
+
+
+}
+
+// Load navigation
+userNav().then(data => {
+    document.getElementById("nav").innerHTML = data;
+    signout();
+    updateWishlistcartNotification()
+
 });
 
 // Load footer
@@ -182,7 +194,7 @@ wishlistItems.forEach(wishlist => {
                 <p class="text-white rounded-1 ps-2"></p>
                 <img style="width: 130px; height: 130px;" class="mt-4" src="${wishlist.image}" alt="">
                 <div class="d-flex flex-column">
-                    <a href="#"><img src="/images/icon-delete.png" alt="wishlist"></a>
+                    <img class="delete" src="/images/icon-delete.png" alt="wishlist">
                 </div>
             </div>
             <button class="cart w-100 mt-auto btn btn-dark">Add To Cart</button>
@@ -192,6 +204,20 @@ wishlistItems.forEach(wishlist => {
     `;
     userwishlist.appendChild(row);
 
+    //delete
+    const wishlistDelete = row.querySelector(".delete");
+    const iswishlist = user.wishlist.some(item => item.title === wishlist.title);
+
+    wishlistDelete.addEventListener("click", () => {
+        if (iswishlist) {
+            user.wishlist = user.wishlist.filter(product => product.title !== wishlist.title);
+            localStorage.setItem("users", JSON.stringify(users));
+            row.remove();
+            updateWishlistcartNotification()
+        }
+    });
+
+
     const wishlistCartBtn = row.querySelector(".cart");
 
     const isCart = user.cart.some(item => item.title === wishlist.title);
@@ -199,6 +225,11 @@ wishlistItems.forEach(wishlist => {
         wishlistCartBtn.textContent = "Added to cart";
     }
 
+
+
+
+
+    // wishlist
     wishlistCartBtn.addEventListener("click", () => {
         const cartItem = {
             title: wishlist.title,
