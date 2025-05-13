@@ -1,0 +1,645 @@
+[
+  {
+    "id": 1,
+    "title": "blue flower dress",
+    "price": 512.84,
+    "description": "A dress with wide, skirt-like legs, resembling wide-leg pants.",
+    "category": "women's fashion",
+    "image": "/images/blue flower dress.png",
+    "rating": {
+      "rate": 3.3,
+      "count": 420
+    }
+  },
+  {
+    "id": 2,
+    "title": "cardigan",
+    "price": 227.85,
+    "description": " A dress with a fitted bodice and a loose, full skirt, often reaching the knee or slightly below.",
+    "category": "women's fashion",
+    "image": "/images/cardigan.png",
+    "rating": {
+      "rate": 1.3,
+      "count": 501
+    }
+  },
+  {
+    "id": 3,
+    "title": "ladies hoodie",
+    "price": 873.08,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/ladies hoodie.png",
+    "rating": {
+      "rate": 4.5,
+      "count": 516
+    }
+  },
+  {
+    "id": 4,
+    "title": "colorfull lady dress",
+    "price": 287.2,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/colorfull lady dress.png",
+    "rating": {
+      "rate": 2.8,
+      "count": 238
+    }
+  },
+  {
+    "id": 5,
+    "title": "elegant dress",
+    "price": 856.86,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/elegant dress.png",
+    "rating": {
+      "rate": 2.7,
+      "count": 727
+    }
+  },
+  {
+    "id": 6,
+    "title": "flower dress",
+    "price": 999.14,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/flower dress.png",
+    "rating": {
+      "rate": 4.5,
+      "count": 37
+    }
+  },
+  {
+    "id": 7,
+    "title": "indian dress",
+    "price": 291.71,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/indian dress.png",
+    "rating": {
+      "rate": 2.9,
+      "count": 912
+    }
+  },
+  {
+    "id": 8,
+    "title": "ladies bag",
+    "price": 275.32,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/ladies bag.png",
+    "rating": {
+      "rate": 3.1,
+      "count": 475
+    }
+  },
+  {
+    "id": 9,
+    "title": "ladies sandals",
+    "price": 943.68,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/ladies sandals.png",
+    "rating": {
+      "rate": 1.5,
+      "count": 624
+    }
+  },
+  {
+    "id": 10,
+    "title": "lady long sleeve",
+    "price": 197.65,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/lady long sleeve.png",
+    "rating": {
+      "rate": 4.5,
+      "count": 705
+    }
+  },
+  {
+    "id": 11,
+    "title": "leather bag",
+    "price": 797.76,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/leather bag.png",
+    "rating": {
+      "rate": 1.9,
+      "count": 349
+    }
+  },
+ 
+  {
+    "id": 12,
+    "title": "mini skirt",
+    "price": 406.49,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/mini skirt.png",
+    "rating": {
+      "rate": 3.2,
+      "count": 845
+    }
+  },
+  {
+    "id": 13,
+    "title": "night dress",
+    "price": 115.52,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/night dress.png",
+    "rating": {
+      "rate": 4.9,
+      "count": 181
+    }
+  },
+  {
+    "id": 14,
+    "title": "red dress",
+    "price": 966.9,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/red dress.png",
+    "rating": {
+      "rate": 3.3,
+      "count": 432
+    }
+  },
+  {
+    "id": 15,
+    "title": "wave mini skirt",
+    "price": 396.73,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/wave mini skirt.png",
+    "rating": {
+      "rate": 4.5,
+      "count": 938
+    }
+  },
+  {
+    "id": 16,
+    "title": "women sandals",
+    "price": 567.16,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/women sandals.png",
+    "rating": {
+      "rate": 1.4,
+      "count": 276
+    }
+  },
+  {
+    "id": 17,
+    "title": "bag",
+    "price": 232.7,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "women's fashion",
+    "image": "/images/bag.png",
+    "rating": {
+      "rate": 1.3,
+      "count": 933
+    }
+  },
+ 
+
+  {
+    "id": 18,
+    "title": "baseball cap",
+    "price": 626.43,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/baseball cap.png",
+    "rating": {
+      "rate": 2.0,
+      "count": 841
+    }
+  },
+  {
+    "id": 19,
+    "title": "blue jacket",
+    "price": 394.94,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/blue jacket.png",
+    "rating": {
+      "rate": 3.5,
+      "count": 79
+    }
+  },
+  {
+    "id": 20,
+    "title": "blue men parking shirt",
+    "price": 6.36,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/blue men parking shirt.png",
+    "rating": {
+      "rate": 2.1,
+      "count": 713
+    }
+  },
+  {
+    "id": 21,
+    "title": "blue men shirt",
+    "price": 487.77,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/blue men shirt.png",
+    "rating": {
+      "rate": 2.2,
+      "count": 622
+    }
+  },
+  {
+    "id": 22,
+    "title": "blue packing shirt",
+    "price": 922.68,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/blue packing shirt.png",
+    "rating": {
+      "rate": 2.3,
+      "count": 794
+    }
+  },
+  {
+    "id": 23,
+    "title": "boot",
+    "price": 276.54,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/boot.png",
+    "rating": {
+      "rate": 2.4,
+      "count": 180
+    }
+  },
+  {
+    "id": 24,
+    "title": "brown shoe",
+    "price": 583.37,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/brown shoe.png",
+    "rating": {
+      "rate": 3.0,
+      "count": 752
+    }
+  },
+  {
+    "id": 25,
+    "title": "full suit",
+    "price": 206.06,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/full suit.png",
+    "rating": {
+      "rate": 3.6,
+      "count": 807
+    }
+  },
+  {
+    "id": 26,
+    "title": "jacket",
+    "price": 804.05,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/jacket.png",
+    "rating": {
+      "rate": 1.9,
+      "count": 369
+    }
+  },
+  {
+    "id": 27,
+    "title": "men coat",
+    "price": 272.9,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/men coat.png",
+    "rating": {
+      "rate": 2.1,
+      "count": 52
+    }
+  },
+  {
+    "id": 28,
+    "title": "men glasses",
+    "price": 311.24,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/men glasses.png",
+    "rating": {
+      "rate": 1.4,
+      "count": 814
+    }
+  },
+  {
+    "id": 29,
+    "title": "men leather belt",
+    "price": 71.19,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/men leather belt.png",
+    "rating": {
+      "rate": 1.4,
+      "count": 127
+    }
+  },
+  {
+    "id": 30,
+    "title": "men suit",
+    "price": 155.85,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/men suit.png",
+    "rating": {
+      "rate": 4.9,
+      "count": 138
+    }
+  },
+  {
+    "id": 31,
+    "title": "plain shirt",
+    "price": 432.58,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/plain shirt.png",
+    "rating": {
+      "rate": 3.9,
+      "count": 811
+    }
+  },
+  {
+    "id": 32,
+    "title": "spotted red shirt",
+    "price": 886.71,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/spotted red shirt.png",
+    "rating": {
+      "rate": 2.4,
+      "count": 567
+    }
+  },
+  {
+    "id": 33,
+    "title": "spotted tshirt",
+    "price": 594.46,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/spotted tshirt.png",
+    "rating": {
+      "rate": 3.4,
+      "count": 366
+    }
+  },
+  {
+    "id": 34,
+    "title": "suit vest",
+    "price": 352.98,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/suit vest.png",
+    "rating": {
+      "rate": 3.8,
+      "count": 520
+    }
+  },
+  {
+    "id": 35,
+    "title": "sunglasses",
+    "price": 51.11,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "men's fashion",
+    "image": "/images/sunglasses.png",
+    "rating": {
+      "rate": 4.6,
+      "count": 351
+    }
+  },
+
+
+  {
+    "id": 36,
+    "title": "black camera",
+    "price": 431.1,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/black camera.png",
+    "rating": {
+      "rate": 5.0,
+      "count": 832
+    }
+  },
+  {
+    "id": 37,
+    "title": "camera",
+    "price": 42.79,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/camera.png",
+    "rating": {
+      "rate": 2.5,
+      "count": 402
+    }
+  },
+  {
+    "id": 38,
+    "title": "camera1",
+    "price": 151.38,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/camera1.png",
+    "rating": {
+      "rate": 2.3,
+      "count": 842
+    }
+  },
+  {
+    "id": 39,
+    "title": "car",
+    "price": 484.85,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/car.png",
+    "rating": {
+      "rate": 4.2,
+      "count": 917
+    }
+  },
+  {
+    "id": 40,
+    "title": "gamepad2",
+    "price": 33.36,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/gamepad2.png",
+    "rating": {
+      "rate": 1.7,
+      "count": 23
+    }
+  },
+  {
+    "id": 41,
+    "title": "gampad",
+    "price": 392.68,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/gampad.png",
+    "rating": {
+      "rate": 1.9,
+      "count": 336
+    }
+  },
+  {
+    "id": 42,
+    "title": "keyboard",
+    "price": 358.67,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/keyboard.png",
+    "rating": {
+      "rate": 4.7,
+      "count": 239
+    }
+  },
+  {
+    "id": 43,
+    "title": "Tv",
+    "price": 567.55,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/Tv.png",
+    "rating": {
+      "rate": 3.4,
+      "count": 615
+    }
+  },
+  {
+    "id": 44,
+    "title": "speaker",
+    "price": 174.84,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/speaker.png",
+    "rating": {
+      "rate": 1.1,
+      "count": 517
+    }
+  },
+  {
+    "id": 45,
+    "title": "old fashion camera",
+    "price": 103.15,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/old fashion camera.png",
+    "rating": {
+      "rate": 3.9,
+      "count": 869
+    }
+  },
+  {
+    "id": 46,
+    "title": "laptop",
+    "price": 538.57,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "electronics",
+    "image": "/images/laptop.png",
+    "rating": {
+      "rate": 4.5,
+      "count": 265
+    }
+  },
+
+  {
+    "id": 47,
+    "title": "blue jewellery",
+    "price": 373.03,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "jewelery",
+    "image": "/images/blue jewellery.png",
+    "rating": {
+      "rate": 4.3,
+      "count": 352
+    }
+  },
+  {
+    "id": 48,
+    "title": "designer ring",
+    "price": 546.48,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "jewelery",
+    "image": "/images/designer ring.png",
+    "rating": {
+      "rate": 1.1,
+      "count": 891
+    }
+  },
+  {
+    "id": 49,
+    "title": "diamond ring",
+    "price": 694.89,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "jewelery",
+    "image": "/images/diamond ring.png",
+    "rating": {
+      "rate": 4.4,
+      "count": 269
+    }
+  },
+  {
+    "id": 50,
+    "title": "jewellery necklace",
+    "price": 665.03,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "jewelery",
+    "image": "/images/jewellery necklace.png",
+    "rating": {
+      "rate": 1.4,
+      "count": 809
+    }
+  },
+  {
+    "id": 51,
+    "title": "silver black ring",
+    "price": 8.41,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "jewelery",
+    "image": "/images/silver black ring.png",
+    "rating": {
+      "rate": 2.0,
+      "count": 373
+    }
+  },
+  {
+    "id": 52,
+    "title": "titanium ring",
+    "price": 451.68,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "jewelery",
+    "image": "/images/titanium ring.png",
+    "rating": {
+      "rate": 4.2,
+      "count": 722
+    }
+  },
+  {
+    "id": 53,
+    "title": "wedding ring",
+    "price": 152.73,
+    "description": "A fashionable choice for every season. Stylish and comfortable.",
+    "category": "jewelery",
+    "image": "/images/wedding ring.png",
+    "rating": {
+      "rate": 3.6,
+      "count": 112
+    }
+  }
+ 
+]

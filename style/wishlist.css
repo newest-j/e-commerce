@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navinput {
+    box-shadow: 0px 5px 10px #888888;
+}
+
+#itembox {
+    box-shadow: 0px 5px 10px #888888;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#footerinput::placeholder {
+    color: gray
+}
+
+#usernav:hover {
+    background-color: #DB4444;
+    border-radius: 50%;
+}
+ul li {
+    line-height: 50px;
+}
+
+@media screen and (max-width:585px) {
+    #navbar {
+        display: none;
+    }
+
+    #offcanvas {
+        display: block !important;
+    }
+}

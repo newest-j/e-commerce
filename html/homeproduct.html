@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>product</title>
+    <link rel="stylesheet" href="/style/product.css">
+</head>
+
+<body>
+
+    <!-- nav from utilis -->
+    <div id="nav" class="sticky-top" style="background-color:#fdfdfd;"></div>
+
+
+    <!-- body -->
+    <div class="container mt-5">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item "><a href="#" class="text-secondary text-decoration-none">Account</a></li>
+            <li class="breadcrumb-item "><a href="#" class="text-secondary text-decoration-none">Gaming</a></li>
+            <li class="fw-bold breadcrumb-item active">Havic HV G-92 Gamepad</li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="container mt-5">
+        <div class="row gap-4">
+
+            <div class="productcheckdiff col-12 col-md-2">
+                <!-- dynamically from homeproduct.js -->
+            </div>
+            <div class="col-12 col-md " id="product">
+                <div class="d-flex justify-content-center  align-items-center  h-100">
+                    <img class="rounded-1 productcheckmain mw-100" src="" alt="">
+                </div>
+            </div>
+
+
+            <div class="productpay col col-md ms-5">
+                <h4 class="productname">Havic HV G-92 Gamepad</h4>
+                <div class="d-flex gap-2">
+                    <p class="productrate"></p>
+                    <img style="margin-top: 5px; margin-left: -10px; width: 15px; height: 15px;"
+                        src="/images/full star.png" alt="">
+
+                    <div class="productnumber">(150 Reviews)</div>
+
+                    <div class="bg-secondary d-flex align-items-center mt-1" style="width: 2px; height: 15px;"></div>
+
+                    <div style="color: #00FF66;">In Stock</div>
+
+                </div>
+                <h3 class="productprice mt-2">$192.00</h3>
+
+                <p class="productdescription">PlayStation 5 Controller Skin High quality vinyl with air
+                    channel adhesive for easy bubble free install & mess
+                    free removal Pressure sensitive.</p>
+
+                <hr>
+
+                <div class="d-flex align-items-end gap-4">
+                    <h4 class="mb-0">Colours:</h4>
+                    <div class="d-flex gap-1">
+                        <div class="form-check mb-0">
+                            <input style="background-color: #A0BCE0;" class=" form-check-input" type="radio"
+                                id="selectcolor" name="productcolor" value="skyblue">
+                        </div>
+
+                        <div class="form-check mb-0">
+                            <input style="background-color: #DB4444;" class=" form-check-input" type="radio"
+                                id="selectcolor2" name="productcolor" value="oranger">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="d-flex align-items-end gap-3 mt-3">
+                    <div>
+                        <h4 class="mb-0">Size:</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <p id="producthover" class="border border-2 px-1 mb-0">XS</p>
+                        <p id="producthover" class="border border-2 px-1 mb-0">S</p>
+                        <p id="producthover" class="border border-2 px-1 mb-0">M</p>
+                        <p id="producthover" class="border border-2 px-1 mb-0">L</p>
+                        <p id="producthover" class="border border-2 px-1 mb-0">XL</p>
+                    </div>
+
+                </div>
+
+                <div class="d-flex mt-3 gap-3">
+                    <div class="d-flex align-items-center  border boder2 rounded-2">
+                        <button id="producthover" class="btn  border boder2">-</button>
+                        <p class="mb-0 text-center" style="width: 50px;">2</p>
+                        <button id="" class="producthover btn  border boder2">+</button>
+
+                    </div>
+
+                    <button style="background-color: #DB4444;" class="btn text-white">Buy Now</button>
+                    <img class="button rounded-2 border border-2" src="/images/Wishlist.png" alt="">
+                </div>
+
+
+                <div class="border border-2 mt-3 py-4 ps-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="/images/icon-delivery2.png" alt="icon-delivery">
+                        </div>
+
+                        <div>
+                            <h5>Free Delivery</h5>
+                            <a href="" class="text-dark">Enter your postal code for Delivery Availability</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="/images/Icon-return2.png" alt="icon-return">
+                        </div>
+
+                        <div>
+                            <h5>Return Delivery</h5>
+                            <p> Free 30 Days Delivery Returns. <a href="" class="text-dark"> Details</a> </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- related items -->
+
+    <div class="container " style="margin-top: 100px; margin-bottom: 100px;">
+
+        <div class="d-flex align-items-center gap-3">
+
+            <div class="rounded-1" style="width: 30px; height: 60px; background-color: #DB4444;"></div>
+            <p style="color: #DB4444;">Related Item</p>
+        </div>
+
+
+        <div class="relatedproduct row mt-5">
+            <!-- dynamically from homeproduct.js -->
+
+
+        </div>
+
+    </div>
+
+
+    <!-- footer from utils -->
+    <div id="footer"></div>
+
+
+    <script src="/script/homeproduct.js" type="module"></script>
+</body>
+
+</html>

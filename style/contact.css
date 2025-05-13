@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navinput {
+    box-shadow: 0px 5px 10px #888888;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ul li {
+    line-height: 50px;
+}
+
+
+#name,#email,#lname {
+    background-color: #F5F5F5;
+
+}
+
+#comment{
+    background-color: #F5F5F5;
+}
+
+#contact {
+    box-shadow: 0px 5px 10px #888888;
+}
+
+#profileinput::placeholder {
+    text-align: left !important;
+}
+
+@media screen and (max-width:585px) {
+    #navbar {
+        display: none;
+    }
+
+    #offcanvas {
+        display: block !important;
+    }
+}

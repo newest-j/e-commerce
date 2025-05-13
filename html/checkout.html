@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/style/checkout.css">
+</head>
+
+<body>
+    <!-- nav from utils -->
+    <div id="nav" class="sticky-top" style="background-color:#fdfdfd;"></div>
+
+    <div class="container mt-5">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item "><a href="#" class="text-secondary text-decoration-none">Account</a></li>
+            <li class="breadcrumb-item "><a href="#" class="text-secondary text-decoration-none">Product</a></li>
+            <li class="breadcrumb-item "><a href="#" class=" text-secondary text-decoration-none">View Cart</a></li>
+            <li class="fw-bold breadcrumb-item active">Cart</li>
+        </ul>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col">
+                <h4>Billing Details</h4>
+                <!-- form -->
+                <form>
+                    <div class="mb-3 mt-3">
+                        <label for="name" class="form-label text-secondary">First Name <span
+                                style="color: #DB4444;">*</span></label>
+                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="name"
+                            placeholder="" name="name">
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label text-secondary">Company Name</label>
+                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="companyname"
+                            placeholder="" name="company">
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="address" class="form-label text-secondary">Street Address <span
+                                style="color: #DB4444;">*</span></label>
+                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="address"
+                            placeholder="" name="address">
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="floor" class="form-label text-secondary">Apartment, floor, etc. (optional) </label>
+                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="floor"
+                            placeholder="" name="floor">
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="town" class="form-label text-secondary">Town/City <span
+                                style="color: #DB4444;">*</span></label>
+                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="town"
+                            placeholder="" name="town">
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="phonenumber" class="form-label text-secondary">Phone Number <span
+                                style="color: #DB4444;">*</span></label>
+                        <input style="width: 70%;" id="checkout" type="number" class="form-control" id="phonenumber"
+                            placeholder="" name="phonenumber">
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label text-secondary">Email Address <span
+                                style="color: #DB4444;">*</span></label>
+                        <input style="width: 70%;" id="checkout" type="email" class="form-control" id="email"
+                            placeholder="" name="email">
+                    </div>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="saveinfo" name="information"
+                            value="saveinfo">
+                        <label class="form-check-label">Save this information for faster check-out next time</label>
+                    </div>
+
+
+                </form>
+
+            </div>
+            <!-- details -->
+            <div class="col" style="margin-top: 70px;">
+                <div style="width: 70%;">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <img style="width: 40px; height: 40px;" src="/images/item1.png" alt="">
+                            <span>H1 Gamepad</span>
+                        </div>
+                        <p>$650</p>
+                    </div>
+
+
+                    <div class="mt-3 d-flex justify-content-between">
+                        <div>
+                            <img style="width: 40px; height: 40px;" src="/images/bag.png" alt="">
+                            <span>Gucci duffle bag</span>
+                        </div>
+                        <p>$1100</p>
+                    </div>
+
+                    <div class="mt-3 d-flex justify-content-between">
+                        <p>Subtotal:</p>
+                        <p>$1750</p>
+                    </div>
+                    <hr class="mt-0">
+
+                    <div class="d-flex justify-content-between">
+                        <p>Shipping:</p>
+                        <p>Free</p>
+                    </div>
+
+                    <hr class="mt-0">
+                    <div class="d-flex justify-content-between">
+                        <p>Total:</p>
+                        <p>$1750</p>
+                    </div>
+
+
+                    <div class="d-flex justify-content-between">
+                        <div class="form-check">
+                            <input class=" form-check-input" type="radio" id="selectbank" name="bankname"
+                                value="bankname">
+                            <label class="form-check-label">Bank</label>
+                        </div>
+
+                        <div>
+                            <a href=""> <img src="/images/bkash.png" alt=""></a>
+                            <a href=""><img src="/images/visa.png" alt=""></a>
+                            <a href=""><img src="/images/mastercard.png" alt=""></a>
+                            <a href=""><img src="/images/unknown.png" alt=""></a>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class=" mt-3 form-check">
+                        <input class=" form-check-input" type="radio" id="selectbank" name="bankname" value="bankname">
+                        <label class="form-check-label">Cash on delivery</label>
+                    </div>
+                </div>
+
+
+                <div class="d-flex justify-content-between mt-3">
+                    <input type="text" name="coupon" placeholder="Coupon Code" id="">
+                    <button class="btn text-white" style="background-color:#DB4444;">Apply Coupon</button>
+                </div>
+
+
+                <button class="mt-3 btn text-white" style="background-color:#DB4444;">Place Order</button>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer from utils.js -->
+    <div id="footer"></div>
+
+    <script src="/script/checkout.js" type="module"></script>
+</body>
+
+</html>

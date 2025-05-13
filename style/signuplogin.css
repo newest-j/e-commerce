@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navinput {
+    box-shadow: 0px 5px 10px #888888;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #DB4444 !important;
+}
+
+@media screen and (max-width:585px) {
+    #navbar {
+        display: none !important;
+    }
+
+    #offcanvas {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1195px) {
+    #signupresponsive {
+        flex-direction: column !important;
+        gap: 50px !important;
+    }
+
+    #reponsiveimg {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+    }
+
+    #responsiveform {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 1rem; 
+    }
+
+    #signupresponsive input,
+    #signupresponsive button {
+        width: 100% !important;
+    }
+
+    #loginstyle{
+        flex-direction: column;
+    }
+}
