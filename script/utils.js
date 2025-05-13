@@ -67,9 +67,12 @@ export const guestUser = () => {
 };
 
 export const signout = () => {
-    document.querySelector(".signout").addEventListener("click", () => {
-        localStorage.removeItem("currentuserid");
+    document.querySelectorAll(".signout").forEach(user => {
+        user.addEventListener("click", () => {
+            localStorage.removeItem("currentuserid");
 
-        window.location.href = "/index.html";
-    });
+            window.location.href = "/index.html";
+        });
+    })
+
 };
