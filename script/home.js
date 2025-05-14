@@ -32,6 +32,35 @@ homeNav().then(data => {
             notification.style.display = "none";
         }
     });
+
+
+    // the filter by search
+    const searchInputs = document.querySelectorAll(".search");
+
+    searchInputs.forEach((input) => {
+        input.addEventListener("input", () => {
+            const keyword = input.value.trim().toLowerCase();
+            const target = document.getElementById("exploreproduct");
+
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+
+            if (keyword === "") {
+                // If input is cleared, reset to full list or initial view
+                displayProducts(allProducts.slice(0, exploreExpanded ? allProducts.length : productsPerPage));
+                return;
+            }
+
+            const filteredProducts = allProducts.filter(product =>
+                product.title.toLowerCase().includes(keyword) ||
+                product.category.toLowerCase().includes(keyword) ||
+                product.description.toLowerCase().includes(keyword)
+            );
+
+            displayProducts(filteredProducts, true);
+        });
+    });
 });
 
 // DOM Elements for each section
@@ -50,6 +79,16 @@ const flashSaleText = document.getElementById("flashbtntext");
 
 // Store all products here
 let allProducts = [];
+
+// the category
+document.querySelectorAll(".scroll").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const category = btn.getAttribute("data-category");
+        const filtered = allProducts.filter(product => product.category === category);
+        displayProducts(filtered, true);
+    });
+});
+
 
 // Explore Products
 let exploreExpanded = false;
