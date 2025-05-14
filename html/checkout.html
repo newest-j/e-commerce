@@ -32,86 +32,82 @@
                 <!-- form -->
                 <form>
                     <div class="mb-3 mt-3">
-                        <label for="name" class="form-label text-secondary">First Name <span
+                        <label for="first-name" class="form-label text-secondary">First Name <span
                                 style="color: #DB4444;">*</span></label>
-                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="name"
-                            placeholder="" name="name">
+                        <input style="width: 70%;" type="text" class="checkoutcolor form-control" id="first-name"
+                            name="name">
                     </div>
 
                     <div class="mb-3 mt-3">
-                        <label for="text" class="form-label text-secondary">Company Name</label>
-                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="companyname"
-                            placeholder="" name="company">
+                        <label for="company-name" class="form-label text-secondary">Company Name</label>
+                        <input style="width: 70%;" type="text" class="checkoutcolor form-control" id="company-name"
+                            name="company">
                     </div>
 
                     <div class="mb-3 mt-3">
-                        <label for="address" class="form-label text-secondary">Street Address <span
+                        <label for="street-address" class="form-label text-secondary">Street Address <span
                                 style="color: #DB4444;">*</span></label>
-                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="address"
-                            placeholder="" name="address">
+                        <input style="width: 70%;" type="text" class="checkoutcolor form-control" id="street-address"
+                            name="address">
                     </div>
 
                     <div class="mb-3 mt-3">
-                        <label for="floor" class="form-label text-secondary">Apartment, floor, etc. (optional) </label>
-                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="floor"
-                            placeholder="" name="floor">
+                        <label for="apartment" class="form-label text-secondary">Apartment, floor, etc.
+                            (optional)</label>
+                        <input style="width: 70%;" type="text" class="checkoutcolor form-control" id="apartment"
+                            name="floor">
                     </div>
 
                     <div class="mb-3 mt-3">
-                        <label for="town" class="form-label text-secondary">Town/City <span
+                        <label for="town-city" class="form-label text-secondary">Town/City <span
                                 style="color: #DB4444;">*</span></label>
-                        <input style="width: 70%;" id="checkout" type="text" class="form-control" id="town"
-                            placeholder="" name="town">
+                        <input style="width: 70%;" type="text" class="checkoutcolor form-control" id="town-city"
+                            name="town">
                     </div>
 
                     <div class="mb-3 mt-3">
-                        <label for="phonenumber" class="form-label text-secondary">Phone Number <span
+                        <label for="phone-number" class="form-label text-secondary">Phone Number <span
                                 style="color: #DB4444;">*</span></label>
-                        <input style="width: 70%;" id="checkout" type="number" class="form-control" id="phonenumber"
-                            placeholder="" name="phonenumber">
+                        <input style="width: 70%;" type="number" class="checkoutcolor form-control" id="phone-number"
+                            name="phonenumber">
                     </div>
 
                     <div class="mb-3 mt-3">
-                        <label for="email" class="form-label text-secondary">Email Address <span
+                        <label for="email-address" class="form-label text-secondary">Email Address <span
                                 style="color: #DB4444;">*</span></label>
-                        <input style="width: 70%;" id="checkout" type="email" class="form-control" id="email"
-                            placeholder="" name="email">
+                        <input style="width: 70%;" type="email" class="checkoutcolor form-control" id="email-address"
+                            name="email">
                     </div>
-
 
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="saveinfo" name="information"
+                        <input class="form-check-input" type="checkbox" id="save-info" name="information"
                             value="saveinfo">
-                        <label class="form-check-label">Save this information for faster check-out next time</label>
+                        <label class="form-check-label" for="save-info">Save this information for faster check-out next
+                            time</label>
                     </div>
-
-
                 </form>
+
 
             </div>
             <!-- details -->
             <div class="col" style="margin-top: 70px;">
                 <div style="width: 70%;">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <img style="width: 40px; height: 40px;" src="/images/item1.png" alt="">
+                    <div class="checkout row">
+                        <!-- <div>
+                            <img style="width: 40px; height: 40px;" src="/images/baseball cap.png" alt="">
                             <span>H1 Gamepad</span>
                         </div>
-                        <p>$650</p>
+                        <p>$650</p> -->
                     </div>
 
 
-                    <div class="mt-3 d-flex justify-content-between">
-                        <div>
-                            <img style="width: 40px; height: 40px;" src="/images/bag.png" alt="">
-                            <span>Gucci duffle bag</span>
-                        </div>
-                        <p>$1100</p>
-                    </div>
+
+
+
 
                     <div class="mt-3 d-flex justify-content-between">
                         <p>Subtotal:</p>
-                        <p>$1750</p>
+                        <p class="checkout-total"></p>
                     </div>
                     <hr class="mt-0">
 
@@ -123,7 +119,7 @@
                     <hr class="mt-0">
                     <div class="d-flex justify-content-between">
                         <p>Total:</p>
-                        <p>$1750</p>
+                        <p class="checkout-total"></p>
                     </div>
 
 
@@ -159,8 +155,9 @@
                     <button class="btn text-white" style="background-color:#DB4444;">Apply Coupon</button>
                 </div>
 
+                <button class="mt-3 btn text-white" style="background-color:#DB4444;">Place
+                    Order</button>
 
-                <button class="mt-3 btn text-white" style="background-color:#DB4444;">Place Order</button>
 
 
 
@@ -168,6 +165,7 @@
         </div>
 
     </div>
+
 
     <!-- footer from utils.js -->
     <div id="footer"></div>

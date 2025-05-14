@@ -38,3 +38,36 @@ userNav().then(data => {
 footer().then(data => {
     document.getElementById("footer").innerHTML = data;
 })
+
+
+
+const users = JSON.parse(localStorage.getItem("users"));
+const currentUserId = JSON.parse(localStorage.getItem("currentuserid"));
+const user = users.find(currentuser => currentuser.id === currentUserId);
+const userCart = user.cart;
+const checkOut = document.querySelector(".checkout");
+
+// Render cart items
+userCart.forEach(item => {
+    const row = document.createElement("div");
+    row.className = "d-flex justify-content-between";
+    row.innerHTML = `
+        <div>
+            <img style="width: 40px; height: 40px;" src="${item.image}" alt="">
+            <span>${item.title}</span>
+        </div>
+        <p>$${item.price}</p>
+    `;
+    checkOut.appendChild(row);
+});
+
+// Calculate subtotal
+let subtotal = 0;
+userCart.forEach(item => {
+    subtotal += item.price;
+});
+
+// Update subtotal and total
+document.querySelectorAll(".checkout-total").forEach(el => {
+    el.textContent = `$${subtotal.toFixed(2)}`;
+});
